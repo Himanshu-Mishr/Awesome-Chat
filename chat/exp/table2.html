@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>table with rounded corner</title>
+    <style>
+    table {
+        border-spacing: 0;
+    }
+    th, td {
+        border: 1px solid #000;
+        padding: 0.5em 1em;
+    }
+    /* the first 'th' within the first 'tr' of the 'thead': */
+    thead tr:first-child th:first-child {
+        border-radius: 0.6em 0 0 0;
+    }
+
+    /* the last 'th' within the first 'tr' of the 'thead': */
+    thead tr:first-child th:last-child {
+        border-radius: 0 0.6em 0 0;
+    }
+
+    /* the first 'td' within the last 'tr' of the 'tbody': */
+    tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 0.6em;
+    }
+
+    /* the last 'td' within the last 'tr' of the 'tbody': */
+    tbody tr:last-child td:last-child {
+        border-radius: 0 0 0.6em 0;
+    }
+    #nav {
+    width: 940px;
+    height: 54px;
+    font-size: 14px;
+    background: url("nav-bg.png") no-repeat scroll 7px -30px transparent;
+    margin: 0px 0px -34px;
+    padding: 18px 0px 34px;
+    -moz-user-select: none;
+}
+    </style>
+</head>
+<body>
+<table>
+    <thead>
+        <tr>
+            <th>First column</th>
+            <th>Second column</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Row one, cell one</td>
+            <td>Row one, cell two</td>
+        </tr>
+        <tr>
+            <td>Row two, cell one</td>
+            <td>Row two, cell two</td>
+        </tr>
+        <tr>
+            <td>Row three, cell one</td>
+            <td>Row four, cell two</td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+<div id='nav'>
+
+<ul>
+ <li>home</li>
+ <li>gallery</li>
+ <li>contacts</li>
+</ul>
+</div>
+</body>
+</html>

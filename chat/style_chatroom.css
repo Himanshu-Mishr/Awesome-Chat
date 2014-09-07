@@ -1,0 +1,206 @@
+html, body {
+    font-family: "Open Sans Light";
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    }
+
+inputs:-webkit-input-placeholder {
+    color:    #b5b5b5;
+}
+
+inputs-moz-placeholder {
+    color:    #b5b5b5;
+}
+
+ .inputs  {
+    background: #f5f5f5;
+    font-size: 16px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    padding: 10px 20px;
+    width:80%;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
+    clear: both;
+}
+.inputs:focus {
+    background: #fff;
+    box-shadow: 0px 0px 0px 3px #fff38e, inset 0px 2px 3px rgba( 0,0,0,0.2 ), 0px 5px 5px rgba( 0,0,0,0.15 );
+    outline: none;
+}
+
+
+.css_button {
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: normal;
+    text-decoration: inherit;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px solid #d83526;
+    padding: 4px 20px;
+    text-shadow: 1px 1px 0px #98231a;
+    -webkit-box-shadow: inset 1px 1px 0px 0px #fab3ad;
+    -moz-box-shadow: inset 1px 1px 0px 0px #fab3ad;
+    box-shadow: inset 1px 1px 0px 0px #fab3ad;
+    cursor: pointer;
+    color: #ffffff;
+    display: inline-block;
+    background: -webkit-linear-gradient(90deg, #d34639 5%, #fa665a 100%);
+    background: -moz-linear-gradient(90deg, #d34639 5%, #fa665a 100%);
+    background: -ms-linear-gradient(90deg, #d34639 5%, #fa665a 100%);
+    background: linear-gradient(180deg, #fa665a 5%, #d34639 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fa665a",endColorstr="#d34639");
+}
+
+.css_button:hover {
+    background: -webkit-linear-gradient(90deg, #fa665a 5%, #d34639 100%);
+    background: -moz-linear-gradient(90deg, #fa665a 5%, #d34639 100%);
+    background: -ms-linear-gradient(90deg, #fa665a 5%, #d34639 100%);
+    background: linear-gradient(180deg, #d34639 5%, #fa665a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d34639",endColorstr="#fa665a");
+}
+
+.css_button:active {
+    position:relative;
+    top: 1px;
+}
+
+    #alt {
+    background-color: #DBEAF9;
+    }
+#info {
+    font-size: 140%;
+    /*text-shadow: 0px 2px 3px #555;*/
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fde073;
+    text-indent: 20px;
+    text-align: left;
+    line-height: 1.4;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 5px black;
+    -moz-box-shadow:    0 0 5px black;
+    box-shadow:         0 0 5px black;
+
+}
+
+#exit_button {
+    float: right;
+    margin: 0;
+    padding: 0px 10px 5px 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.username {
+    float: left;
+    font-size: 16px;
+}
+
+.msg {
+
+    text-indent: 14px;
+}
+
+
+.timestamp {
+    float: right;
+    color: #B2B2B2;
+    font-size: 11px;
+}
+.timestamp:hover {
+	float: right;
+    background-color: #FDE073;
+    color: black;
+}
+.cell {
+    word-wrap: break-word;
+}
+/*
+#out {
+    float: right;
+    width: 80%; 
+    height: 100%; 
+}
+*/
+
+#out table {
+    
+    
+    float: right;
+    table-layout:fixed;
+}
+
+
+#out tbody {
+    padding-top: 45px;
+    padding-right: 0px;
+    display: block;
+
+    height: 500px;       /* Just for the demo          */
+    overflow-y: auto;    /* Trigger vertical scroll    */
+    overflow-x: hidden;  /* Hide the horizontal scroll */
+	
+}
+#out td {
+    word-wrap: break-word;
+}
+
+#out tr td {
+	width: 100%;
+}
+
+#in table {
+    float: right;
+    width: 100%;
+
+}
+
+#in {
+    float: bottom;
+    padding: 1% 0% 0% 2%;
+}
+
+/*
+._center {
+    display: table;
+    margin: 0 auto;
+}
+*/
+#out tr:hover {
+    background-color: #F5F5F5;
+}
+
+#sidebar {
+    float: left;
+    width: 20%;
+    height: 100%;
+    padding-top: 40px;
+    font-size: 20px;
+    background-color: white;/*#F2F2F2;*/
+/*    -webkit-box-shadow: 0 0 0px black;
+    -moz-box-shadow:    0 0 0px black;
+    box-shadow:         0 0px 5px black;
+*/
+
+}
+
+#sidebar thead tr {
+    background-color: #10D72D;
+    color: white;
+    height: 40px;
+}
+#sidebar tr {
+    text-indent: 20px;
+}
